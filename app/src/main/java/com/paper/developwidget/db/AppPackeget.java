@@ -8,7 +8,12 @@ import com.j256.ormlite.table.DatabaseTable;
  */
 @DatabaseTable(tableName = "paketages")
 public class AppPackeget {
-    AppPackeget(){
+    public AppPackeget(){
+
+    }
+    public AppPackeget(String name,String pakage){
+        this.name = name;
+        this.pakage = pakage;
 
     }
     @DatabaseField(generatedId = true)
@@ -19,4 +24,36 @@ public class AppPackeget {
     String pakage;
     @DatabaseField(columnName = "createtime")
     long createtime;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPakage() {
+        return pakage;
+    }
+
+    public void setPakage(String pakage) {
+        this.pakage = pakage;
+    }
+
+    public long getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(long createtime) {
+        this.createtime = createtime;
+    }
 }

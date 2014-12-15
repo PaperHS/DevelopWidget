@@ -1,17 +1,34 @@
 package com.paper.developwidget;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.ListView;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    @InjectView(R.id.edittext)
+    EditText mSearchView;
+    @InjectView(R.id.listview)
+    ListView mListview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.inject(this);
+//        List<PackageInfo> list = PackageUtils.getInstalledApplication(this);
+//        AppPacketManager manager = new AppPacketManager(this);
+//        for (PackageInfo info : list){
+//            AppPackeget a = new AppPackeget(info.applicationInfo.name,info.packageName);
+//            manager.save(a);
+//        }
+
+
     }
 
 

@@ -25,5 +25,10 @@
         android:textOn="on"
         android:layout_toRightOf="@id/appwidget_text"
         />
+    <Button
+        android:id="@+id/search_btn"
+        android:text="search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -11,8 +11,8 @@ import com.j256.ormlite.table.TableUtils;
 import java.sql.SQLException;
 
 /**
- * Created by Paper on 14-12-11.
- */
+* Created by Paper on 14-12-11.
+*/
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     public static String DB_NAME = "devwidget.db";
     public static int DB_VER = 1;

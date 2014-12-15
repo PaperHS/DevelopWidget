@@ -1,5 +1,7 @@
 package com.paper.developwidget;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -144,9 +146,9 @@ public class ShellUtils {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e("Commond",e.getMessage());
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("Commond",e.getMessage());
         } finally {
             try {
                 if (os != null) {
