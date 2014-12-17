@@ -507,6 +507,7 @@ public class PackageUtils {
 
     public static List<PackageInfo> getInstalledApplication(Context context){
         PackageManager pm = context.getPackageManager();
+
         List<PackageInfo> packageInfos = pm.getInstalledPackages(PackageManager.GET_UNINSTALLED_PACKAGES);
         return  packageInfos;
 

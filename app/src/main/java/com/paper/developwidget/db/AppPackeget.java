@@ -1,5 +1,7 @@
 package com.paper.developwidget.db;
 
+import android.graphics.drawable.Drawable;
+
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -24,6 +26,9 @@ public class AppPackeget {
     String pakage;
     @DatabaseField(columnName = "createtime")
     long createtime;
+
+    Drawable icon;
+
 
     public int getId() {
         return id;

@@ -30,6 +30,7 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.paper.dev.BT_REFRESH_ACTION" />
                 <action android:name="com.paper.dev.SEARCH_ACTION" />
+                <action android:name="com.paper.dev.BT_TEST_ACTION" />
             </intent-filter>
 
             <meta-data
